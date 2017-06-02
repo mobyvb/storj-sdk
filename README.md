@@ -171,7 +171,7 @@ git submodule add --name storj-lib https://github.com/storj/core vendor/storj-li
 cd vendor/storj-lib
 git config remote.origin.pushurl git://github.com/storj/core
 ```
-This will add the module such that anyone can pull from git but at the same time, anyone with push permissions will be able to do so.
+This will add the module such that anyone can pull from git but at the same time, anyone with push permissions will be able to do so. Make sure the subdirectory in `vendor` has the same name as the corresponding directory that would normally appear in a project's `node_modules` folder.
 
 Remove a submodule but leave it in `.gitmodules` so that you can pull it back in later
 (first ensure that there are no uncomitted changes to the repository)
